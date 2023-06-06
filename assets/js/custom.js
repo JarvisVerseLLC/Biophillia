@@ -80,10 +80,16 @@ Project: CryptoCurrency
     /*--- Testimonial Slider----*/
     cc_testimonial_slider: function () {
       var swiper = new Swiper(".cc-testimonial-swiper", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
         loopFillGroupWithBlank: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

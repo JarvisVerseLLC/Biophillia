@@ -10,6 +10,7 @@
      /* .cc-ban-title {
         width: 65%;
     } */
+
     .cc-banner img {
         width: 100%;
     }
@@ -132,10 +133,7 @@
     .cc-currency-btn a {
         padding: 16px 15px;
     }
-    .cc-testimonal .swiper-slide {
-        margin-left: 0px;
-        margin-right: 25px !important;
-    }
+
     .cc-sum.cc-sum-r-three::before {
         left: -55px;
     }
@@ -252,7 +250,6 @@
     }
     .cc-feature-card {
         width: 35%;
-        margin-bottom: 40px;
         height: auto;
     }
     .cc-feature-title p {
@@ -305,16 +302,12 @@
     .cc-test-title h2 {
         width: 50%;
     }
-    .test-slide {
-        width: 35% !important;
-    }
+   
     .test-img::after {
         left: 0%;
         width: 88%;
     }
-    .cc-testimonal .swiper-slide {
-        margin-right: 28px !important;
-    }
+
     .cc-nls-con {
         width: 100%;
     }
@@ -418,6 +411,38 @@
 }
 @media only screen and (max-width : 768px){
     /* manu */
+    .t-section {
+        background: url(../images/t-assets.png) center no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+    }
+
+    .top-fade:before {
+        content: "";
+        position: absolute;
+        width: 110%;
+        height: 187px;
+        left: -39px;
+        top: 0;
+        background: #222222;
+        filter: blur(20.5px);
+        top: -33px;
+    }
+    .cc-ban-title h2 {
+        font-size: 30px !important;
+        color: #000;
+        font-weight: bold;
+    }
+    .globe {
+        width: 193px;
+    }
+    .top-vill {
+        position: absolute;
+        left: 0;
+        top: -68px;
+        overflow-x: clip;
+    }
+
     .cc-nav-menu li {
         display: block;       
         padding: 17px;
@@ -432,9 +457,13 @@
         background:#f42f54;  
         transition: all 0.5s;    
     }  
+    .cc-nav-menu ul {
+        background:#f42f54;  
+
+    }
     .menu-open .cc-nav-menu {
         left: 0;
-        overflow: scroll;
+        /* overflow: scroll; */
     }
     /* end */
     .cc-container {
@@ -503,7 +532,7 @@
     }
     .cc-feature-con {
         width: 98%;
-        padding: 59px 30px 54px;
+       padding: 5px;
     }
     .select2-container--default .select2-selection--single .select2-selection__arrow {
         right: 5% !important;
@@ -620,7 +649,13 @@
         right: auto;
     }
     .cc-test-title h2 {
-        width: 85%;
+        width: 100%;
+    }
+    .cc-test-title p {
+        width: 100%;
+    }
+    .test-con p {
+        padding: 0;
     }
     .cc-nls-wrap {
         flex-direction: column-reverse;
@@ -639,7 +674,7 @@
         padding: 90px 0 50px;
     }
     .cc-nls-content {
-        width: 80%;
+        width: 100%;
     }
     .cc-nls-content h4{
         font-size: 18px;
@@ -685,9 +720,7 @@
     .cc-sign-btn a {
         padding: 10px 20px;
     }
-    .test-slide {
-        width: 76% !important;
-    } 
+
     .cc-mt-menu-toggle span {
         display: block;
         width: 18px;
@@ -751,8 +784,8 @@
         backdrop-filter: blur(16.5px);
         border-radius: 50px;
         padding: 1.5em;
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        height: 100%;
         margin-top: 10rem;
         margin-bottom: 3rem;
     }
@@ -785,9 +818,7 @@
         color: #222222;
         padding-top: 8px;
     }
-    .cc-nls-show {
-        flex-direction: column;
-    }
+  
     .cc-nls-store-img{
         margin-bottom: 1rem;
     }
@@ -861,9 +892,7 @@
         left: 40%;
         transform: translate(-50%, -50%);
     } */
-    .Tokenomics{
-      display: none;
-    }
+   
     .desktop2{
         margin-top: 1rem;
         display: block;
@@ -902,9 +931,7 @@
     .cc-shown {
         width: 210px;
     }
-    .test-slide {
-        width: 74% !important;
-    }
+
     .cc-con-cur {
         padding: 30px 20px;
     }
@@ -969,10 +996,12 @@
         left: 45%;
     }
     .cc-ban-title p {
-        width: 65%;
+        width: 100%;
     }
     .cc-banner img {
-        height: 380px;
+        height: 510px;
+        object-fit: contain;
+        object-position: bottom;
     }
     .cc-feature {
         padding: 50px 0 50px;
@@ -1048,9 +1077,7 @@
         margin-left: 2.5em;
     }
 
-.cc-testimonal .swiper-slide {
-    margin-right: 16px !important;
-}
+
 }
 
 @media only screen and (max-width : 320px){
@@ -1121,10 +1148,7 @@
         padding: 16px 25px;
         margin-left: 15px;
     }
-    .test-slide {
-        width: 90% !important;
-        padding: 50px 20px;
-    }
+  
     .cc-test-title h2 {
         font-size: 21px;
     }
@@ -1159,8 +1183,8 @@
         .Tokenomics{
             border-radius: 40px;
             padding: .8em;
-            width: 250px;
-            height: 250px;
+            width: 100%;
+            height: 100%;
             margin-top: 10rem;
             margin-bottom: 3rem;
         }

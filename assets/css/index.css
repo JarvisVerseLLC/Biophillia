@@ -1776,3 +1776,37 @@ margin-bottom: 15px;
 .s-more:hover + .s-content{
     display: block;
 }
+.mark, mark {
+    padding: 0.2em;
+    background-color: var(--green) !important;
+    border-radius: 40px;
+    padding: 3px 20px !important;
+}
+.cc-nls-img {
+    position: relative;
+}
+.cc-nls-img:before {
+    content: "";
+    background: url(../images/beem.png) no-repeat;
+    position: absolute;
+    width: 496px;
+    height: 500px;
+    background-size: 100%;
+    left: -140px;
+    z-index: -1;
+    top: -40px;
+}
+.rdms {
+    position: relative;
+}
+.rdms:after {
+    content: "";
+    background: url(../images/beem2.png) no-repeat;
+    position: absolute;
+    width: 426px;
+    height: 490px;
+    background-size: 100%;
+    right: -60px;
+    z-index: -1;
+    top: 150px;
+}

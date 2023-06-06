@@ -79,7 +79,7 @@ input[type="text"]::placeholder , input[type="email"]::placeholder{
      top: 0;
      left: 0;
      width: 100%;
-     z-index: 100;
+     z-index: 1000;
  }
 
  
@@ -266,14 +266,7 @@ ul.breadcrumb li {
     text-align: center;
     margin-bottom: 52px;
 }
-.cc-feature-title h2 {
-    font-size: 32px;
-    width: 48%;
-    margin: 0 auto;
-    color: var(--cc-white-color);
-    line-height: 48px;
-    display: block;
-}
+
 .cc-feature-title p {
     /* font-size: 32px; */
     width: 70%;
@@ -533,7 +526,7 @@ text-align: center;
 }
 /*--summary --*/
 .cc-summary {
-    background-color: #1E1E1E;
+    background-color: #222222;
 }
 .bg-dark {
     background-color: #222 !important;
@@ -1511,7 +1504,7 @@ form#contactForm {
 }
 
 .jarios{
-   padding: 5rem;
+   padding-bottom:50px ;
 }
 
 .jarios h1{
@@ -1560,8 +1553,9 @@ display: block;
     left: -50px;
     top: 0;
     background: #222222;
-    filter: blur(36.5px);
-    top: -70px;
+    filter: blur(30px);
+    top: -100px;
+    z-index: 1;
 }
 .fade-white.top-fade:before {
     background: #fff !important;
@@ -1766,9 +1760,10 @@ margin-bottom: 15px;
     filter: blur(0px);
 }
 .s-more {
-    color: var(--green);
+    color: var(--green) !important;
     display: block;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 .show-box .s-content {
     display: none;
@@ -1791,7 +1786,7 @@ margin-bottom: 15px;
     position: absolute;
     width: 496px;
     height: 500px;
-    background-size: 100%;
+    background-size: 100% 100%;
     left: -140px;
     z-index: -1;
     top: -40px;
@@ -1810,3 +1805,26 @@ margin-bottom: 15px;
     z-index: -1;
     top: 150px;
 }
+
+.scrollable-content {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #f7f7f7; /* Adjust the colors as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .scrollable-content::-webkit-scrollbar {
+    width: 6px; /* Adjust the width as needed */
+  }
+  
+  .scrollable-content::-webkit-scrollbar-track {
+    background-color: #f7f7f7; /* Adjust the background color as needed */
+  }
+  
+  .scrollable-content::-webkit-scrollbar-thumb {
+    background-color: var(--green); /* Adjust the thumb color as needed */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  

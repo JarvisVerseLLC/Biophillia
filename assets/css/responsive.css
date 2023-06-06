@@ -1,6 +1,6 @@
 @media only screen and (min-width : 1440px){
     .cc-page-width {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
      .cc-container {
@@ -84,10 +84,9 @@
     .cc-ban-title h2 {
         font-size: 35px;
         margin-bottom: 25px;
-        color: var(--cc-white-color);
     }
     .cc-nav-menu li {       
-        margin-left: 30px;
+        margin-left: 25px;
     }
 }
 @media only screen and (max-width : 1200px){
@@ -111,6 +110,7 @@
     }
     .cc-ban-content {
         top: 60%;
+        z-index: 10;
     }
     .cc-nav-menu li {
         margin-left: 34px;
@@ -200,13 +200,16 @@
     margin-bottom: 30px;
 }
 .cc-nav-menu li {
-    margin-left: 30px;
+    margin-left: 25px;
 }
 }
 
 @media only screen and (max-width : 1024px){
+    .cc-banner{
+        margin-top: 26px;
+    }
    .cc-container {
-         width: 769px;
+         width: 90%;
          margin: 0 auto;
     }
     .cc-foot-form.cc-width {
@@ -217,7 +220,7 @@
         border-radius: 12px;
     }
     .cc-nav-menu li {
-        margin-left: 30px;
+        margin-left: 25px;
     }
     .cc-sum.cc-sum-r-three::before {
         left: -42px;
@@ -249,7 +252,7 @@
         flex-wrap: wrap;
     }
     .cc-feature-card {
-        width: 35%;
+        width: 28%;
         height: auto;
     }
     .cc-feature-title p {
@@ -267,8 +270,9 @@
     }
     .cc-sign-btn a {
         padding: 15px 20px;
-        width: 70%;
+        width: 100%;
         text-align: center;
+        white-space: nowrap;
     }
     .cc-convert-content {
         width: 58%;
@@ -300,7 +304,7 @@
         height: 70%;
     }
     .cc-test-title h2 {
-        width: 50%;
+        width: 100%;
     }
    
     .test-img::after {
@@ -344,7 +348,6 @@
     }
     .faqs{
         padding: 3em;
-        width: 250px;
         margin-top: 1em;
     }
     .faqs h1{
@@ -994,6 +997,7 @@
         top: 58%;
         width: 75%;
         left: 45%;
+        z-index: 10;
     }
     .cc-ban-title p {
         width: 100%;

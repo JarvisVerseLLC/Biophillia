@@ -1,3 +1,26 @@
+
+var swiper = new Swiper(".workSlider", {
+  slidesPerView: 1,
+    spaceBetween: 30,
+    // centeredSlides: true,
+    loop: true,
+    autoplay: {
+  delay: 2000, 
+},
+    breakpoints: {
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+      },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+
 var swiper = new Swiper(".roadMapSlider", {
     slidesPerView: 1,
       spaceBetween: 30,
@@ -38,7 +61,8 @@ $(document).ready(function() {
       var message = successful ? 'Contract Copied!' : 'Unable to copy text.';
 
       // Display the copy status message
-      alert(message);
+      // alert(message);
+      $('.response').text(message)
     } catch (err) {
       // If an error occurs, display an error message
       console.error('Unable to copy text:', err);

@@ -72,7 +72,7 @@ input[type="text"]::placeholder , input[type="email"]::placeholder{
  .cc-navigation {
      z-index: 1;
      position: relative;
-     background: rgba(0, 0, 0, 0.20);
+     background: rgba(0, 0, 0, 0.5);
      -webkit-backdrop-filter: blur(10px);
      backdrop-filter: blur(10px);
      position: fixed;
@@ -80,6 +80,8 @@ input[type="text"]::placeholder , input[type="email"]::placeholder{
      left: 0;
      width: 100%;
      z-index: 1000 !important;
+     padding-top: 8px;
+     padding-bottom: 8px;
  }
 
  

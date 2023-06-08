@@ -84,6 +84,9 @@ Project: CryptoCurrency
         spaceBetween: 30,
         loop: true,
         loopFillGroupWithBlank: true,
+        autoplay: {
+          delay: 2000, 
+        },
         breakpoints: {
           768: {
             slidesPerView: 2,

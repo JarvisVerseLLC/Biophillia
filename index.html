@@ -55,22 +55,25 @@ Author: PixelNX
       </div>
     </div>
   </div>
-  <div class="cc-banner">
-    <div class="c-right rellax"></div>
-    <div class="c-left rellax" data-rellax-speed="7"></div>
-    <img src="assets\images\bg1.png" alt="">
-    <div class="cc-page-width">
-      <div class="cc-ban-content">
-        <div class="cc-ban-con">
-          <div class="cc-ban-title">
-            <h2>The Best Way To <span class="mark">Financial</span> Freedom</h2>
-            <p>Is a decentralized revolutionary approach to financial assets that enables staking to become precisely profitable, sustainable, and achievable high crypto returns to all of its users through an algorithm that is similar to the Bitcoin Rewards Protocol.</p>
-            <a href="#" class="cc-hover-effect">Join Telegram</a>
+
+    <div class="hero-banner">
+      <div class="c-right rellax"></div>
+      <div class="c-left rellax" data-rellax-speed="7"></div>
+      <img src="assets\images\bg1.png" alt="">
+        <div class="hero-overlay">
+          <div class="container">
+            <div class="cc-ban-title">
+              <h2>The Best Way To <span class="mark">Financial</span> Freedom</h2>
+              <p>Is a decentralized revolutionary approach to financial assets that enables staking to become precisely profitable, sustainable, and achievable high crypto returns to all of its users through an algorithm that is similar to the Bitcoin Rewards Protocol.</p>
+              <a href="#" class="cc-hover-effect">Join Telegram</a>
+            </div>
           </div>
+        
         </div>
-      </div>
+    
     </div>
-  </div>
+
+ 
   <div class="cc-feature top-fade">
     <img class="globe g-left rellax" data-rellax-speed="-3" src="./assets/images/globe.png" alt="">
     <img class="globe g-right rellax" data-rellax-speed="2"  src="./assets/images/globe.png" alt="">
@@ -118,7 +121,7 @@ Author: PixelNX
                   
               </div>
               <div class="cc-feat-con">
-                <h3>Auto- Staking & 
+                <h3>Auto-Staking & 
                   Compounding</h3>
                   <div class="show-box">
                     <p class="s-more">Show More</p>
@@ -267,11 +270,8 @@ Author: PixelNX
     </div>
   </div>
  
-  <div class="cc-newsletter-us por">
-    <div class="top-vill" >
-      <img src="./assets/images/top-vill.png" alt="">
-    </div>
-    <div class="cc-container por">
+  <div class="cc-newsletter-us por top-fade">
+    <div class="cc-container por spacer">
     <div class="c-right rellax"></div>
       <div class="cc-nls-wrap">
         <div class="cc-nls-img">
@@ -361,9 +361,9 @@ Author: PixelNX
       </div>
     </div>
   </div>
-  <section class="cc-summary spacer">
+  <section class="cc-summary spacer por">
     <h2 class="title">AS FEATURED ON</h2>
-        <img src="assets/images/afo.png" alt="">
+        <img class="afo" src="assets/images/afo.png" alt="">
   </section> 
 
   <section class="bg-dark t-section spacer top-fade">
@@ -565,12 +565,54 @@ Author: PixelNX
 </section>
 
 
-  <div class="patner top-fade" style="margin-top: 100px" >
-    <div class="jarios">
-      <h1>Our Patners</h1>
-      <img src="assets/images/jarois.png" alt="">
+  <div class="patner-section top-fade" style="margin-top: 100px" >
+    <div class="container por spacer">
+      <h1 class="text-center title">Our Patners</h1>
+      <ul class="partner-list">
+        <li>
+          <img src="assets/images/rug.png" alt="">
+        </li>
+        <li>
+          <img src="assets/images/jarvish.png" alt="">
+        </li>
+        <li>
+          <img src="assets/images/pinksale.png" alt="">
+        </li>
+        <li>
+          <img src="assets/images/rug.png" alt="">
+        </li>
+        <li>
+          <img src="assets/images/jarvish.png" alt="">
+        </li>
+        <li>
+          <img src="assets/images/pinksale.png" alt="">
+        </li>
+      </ul>
+    
     </div>
+    <img class="mo-b" src="./assets/images/Mountain-b.png" alt="">
   </div>
+  <footer class="spacer top-fade bg-dark">
+    <div class="container por">
+      <div class="row">
+        <div class="col-md-6">
+          <img width="280" style="margin-left: -29px;" src="assets/images/logo.png" alt="">
+          <p class="read">
+           <span style="color: #7CFB62"> The Best Way to Freedom</span> is a decentralized revolutionary approach to financial assets that enables staking to become precisely profitable, sustainable, and achievable high crypto returns to all of its users through an algorithm that is similar to the Bitcoin Rewards Protocol.
+          </p>
+        </div>
+        <div class="col-md-6 tr-d">
+          <ul class="simple-list">
+            <h4 style="color: #7CFB62">Quick Links</h4>
+            <li><a href="">Pinksale Presale</a></li>
+            <li><a href="">Whitepaper</a></li>
+            <li><a href="">Audit Report</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   
+  </footer>
   <!-- JS -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
@@ -628,6 +670,18 @@ $(document).ready(function() {
       console.error('Unable to copy text:', err);
       alert('Unable to copy text. Please try again.');
     }
+  });
+});
+
+
+$(".s-more").hover(function() {
+  var $content = $(this).parent('.show-box').find(".s-content");
+  $content.slideDown();
+  $(this).text("View less");
+}, function() {
+  var $content = $(this).parent('.show-box').find(".s-content");
+  $content.slideUp(function() {
+    $(this).prev('.s-more').text($content.is(":visible") ? "View less" : "View more");
   });
 });
 

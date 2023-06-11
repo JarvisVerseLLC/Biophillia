@@ -503,6 +503,9 @@
   .workSlider .swiper-wrapper {
         padding-bottom: 50px;
     }
+    .show-mobile {
+        display: block !important;
+    }
     .spacer {
         padding-top: 50px !important;
         padding-bottom: 50px !important;

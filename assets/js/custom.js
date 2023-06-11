@@ -19,7 +19,6 @@ Project: CryptoCurrency
 
       this.cc_counter();
       this.cc_binary_summary();
-      this.cc_testimonial_slider();
       this.toggle_menu();
       this.cc_input_selector();
      

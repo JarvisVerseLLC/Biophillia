@@ -493,12 +493,19 @@
         content: "";
         position: absolute;
         width: 130%;
-        height: 77px;
+        height: 75px;
         left: -50px;
         top: 0;
         background: #222222;
-        filter: blur(12.5px);
-        top: -38px;
+        filter: blur(15px);
+        top: -40px;
+    }
+  .workSlider .swiper-wrapper {
+        padding-bottom: 50px;
+    }
+    .spacer {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
     }
     .cc-ban-title h2 {
         font-size: 27px !important;

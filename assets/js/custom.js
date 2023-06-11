@@ -78,27 +78,7 @@ Project: CryptoCurrency
     /*--- Binary Summary----*/
 
     /*--- Testimonial Slider----*/
-    cc_testimonial_slider: function () {
-      var swiper = new Swiper(".cc-testimonial-swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        autoplay: {
-          delay: 2000, 
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        }
-      });
-    },
+ 
     /*--- Testimonial Slider----*/
 
     // toggle menu

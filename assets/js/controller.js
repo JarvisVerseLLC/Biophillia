@@ -20,6 +20,28 @@ var swiper = new Swiper(".workSlider", {
     },
   });
 
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+      spaceBetween: 30,
+      // centeredSlides: true,
+      loop: true,
+      autoplay: {
+    delay: 2000, 
+  },
+      breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+        },
+  
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
 
 var swiper = new Swiper(".roadMapSlider", {
     slidesPerView: 1,
